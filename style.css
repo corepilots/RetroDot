@@ -1,0 +1,24 @@
+:root{--bg:#000;--text:#dde3db;--muted:#a3a99f;--accent:#efb4a2;--olive:#8f9479;--obsidian:#3d4140}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}
+header,main,footer{max-width:780px;margin:0 auto;padding:0 20px}
+header{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;padding-top:26px;padding-bottom:22px;background:linear-gradient(90deg,var(--accent) 6px,transparent 6px) repeat-x bottom/12px 6px}
+header .brand{display:flex;align-items:center;gap:12px;margin-right:auto;text-decoration:none;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+header .brand img{height:21px;width:auto;display:block}
+a{color:var(--text);text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+a:hover,a:focus-visible{color:var(--accent)}
+h1{font-size:1.7rem;margin:2.2rem 0 .3rem;letter-spacing:.08em;text-transform:uppercase}
+h2{font-size:1.05rem;margin:2.2rem 0 .3rem;letter-spacing:.05em;text-transform:uppercase}
+h2::before{content:"";display:inline-block;width:.55em;height:.55em;background:var(--accent);margin-right:.7em}
+p,li{color:var(--muted)}
+li::marker{color:var(--accent)}
+ul{list-style:square;padding-left:1.4rem}
+strong{color:var(--text)}
+.updated{font-size:.85rem}
+pre{white-space:pre-wrap;color:var(--muted);font-size:.78rem;line-height:1.5;background:#0b0d0c;border:2px solid var(--obsidian);padding:14px}
+hr{border:0;height:6px;margin:3rem 0;background:linear-gradient(90deg,var(--obsidian) 6px,transparent 6px) repeat-x/12px 6px}
+footer{padding-top:24px;padding-bottom:40px;color:var(--muted);font-size:.9rem;background:linear-gradient(90deg,var(--obsidian) 6px,transparent 6px) repeat-x top/12px 6px}
+.hero{display:block;width:100%;height:auto;margin:1.8rem 0 .5rem;border:2px solid var(--obsidian)}
+.swatches{display:flex;gap:10px;margin:1rem 0;padding:0;list-style:none}
+.swatches li{display:flex;align-items:center;gap:8px;color:var(--text);font-size:.85rem}
+.swatches i{display:inline-block;width:18px;height:18px}
